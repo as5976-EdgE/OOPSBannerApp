@@ -1,0 +1,24 @@
+public class BannerApp {
+    public static void main(String[] args) {
+        // Step 1: Populate the array with the "OOPS" pattern using stars
+        // Each string represents one horizontal row of the banner
+        String[] oopsBanner = {
+            "  **** **** **** ***** ",
+            " * * * * * * * ",
+            " * * * * **** *** ",
+            " * * * * * * ",
+            "  **** **** * ***** "
+        };
+
+        // Step 2: Pass the array to the logic method
+        printBanner(oopsBanner);
+    }
+
+    // Step 3: Using a static method for modularity (The Loop)
+    public static void printBanner(String[] banner) {
+        // The enhanced for-loop traverses the array and prints each row
+        for (String row : banner) {
+            System.out.println(row);
+        }
+    }
+}
